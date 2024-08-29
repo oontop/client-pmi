@@ -1,5 +1,5 @@
 ///auth.ts
-import axios from "axios";
+/* import axios from "axios";
 import { LoginUser, RegisterUser } from "../@types/types";
 
 export const baseUrl = "http://localhost:8080/api/v1";
@@ -75,4 +75,4 @@ export const auth = {
 
 };
 
-export default auth;
+export default auth; */

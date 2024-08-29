@@ -10,7 +10,7 @@ import MeetingTypeChart from "../components/MeetingTypeChart";
 import UserActivityChart from "../components/UserActivityChart";
 import { convertToCSV } from '../utils/csvUtils';
 import { RiDownload2Line } from 'react-icons/ri';
-import { useAuth } from "../hooks/useAuth";
+/* import { useAuth } from "../hooks/useAuth"; */
 
 
 const PatientProfile = () => {
@@ -18,7 +18,7 @@ const PatientProfile = () => {
     const { id } = useParams<{ id: string }>();
     const [mergedPatient, setmergedPatient] = useState<IPatient>();
     const [error, setError] = useState<ErrorType>();
-    const { isAdmin } = useAuth();
+    /* const { isAdmin } = useAuth(); */
     const navigate = useNavigate();
     useEffect(() => {
         getMergedPatientById(id ?? "")
@@ -115,7 +115,7 @@ const PatientProfile = () => {
                                 </button>
 
                             </div>
-                            {isAdmin && (
+                            {/*   {isAdmin && (
                                 <div className="flex justify-center items-center ">
 
                                     <RiDeleteBin5Line
@@ -128,7 +128,7 @@ const PatientProfile = () => {
                                     />
 
                                 </div>
-                            )}
+                            )} */}
                             <div className="flex justify-center items-center">
                                 <button
                                     onClick={() => downloadCSV(mergedPatient)}

@@ -1,4 +1,4 @@
-///AuthContext.tsx
+/* ///AuthContext.tsx
 import { createContext, useEffect, useState } from "react";
 import { AuthContextType, JwtDecodeType } from "../@types/types";
 import { jwtDecode } from "jwt-decode";
@@ -52,4 +52,4 @@ export const AuthContextProvider = ({ children }) => {
             {children}
         </AuthContext.Provider>
     );
-};
+}; */
